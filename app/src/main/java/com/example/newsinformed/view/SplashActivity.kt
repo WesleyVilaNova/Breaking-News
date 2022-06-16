@@ -1,4 +1,4 @@
-package com.example.newsinformed
+package com.example.newsinformed.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.postDelayed
+import com.example.newsinformed.R
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

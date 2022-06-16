@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/homeNewsFragment"
-        android:name="com.example.newsinformed.HomeNewsFragment"
+        android:name="com.example.newsinformed.view.fragments.HomeNewsFragment"
         android:label="HomeNewsFragment"
         tools:layout="@layout/fragment_home_list_news">
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.newsinformed.FavoriteFragment"
+        android:name="com.example.newsinformed.view.fragments.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" >
         <action

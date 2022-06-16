@@ -1,8 +1,9 @@
-package com.example.newsinformed
+package com.example.newsinformed.view.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.newsinformed.R
 import com.example.newsinformed.databinding.FragmentHomeListNewsBinding
 
 class HomeNewsFragment : Fragment(R.layout.fragment_home_list_news) {
