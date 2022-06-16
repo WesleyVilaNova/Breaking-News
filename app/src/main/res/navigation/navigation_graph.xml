@@ -3,21 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/homeNewsFragment">
+
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.newsinformed.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        android:id="@+id/homeNewsFragment"
+        android:name="com.example.newsinformed.HomeNewsFragment"
+        android:label="HomeNewsFragment"
+        tools:layout="@layout/fragment_home_list_news">
         <action
-            android:id="@+id/action_splashFragment_to_homeListNewsFragment"
-            app:destination="@id/homeListNewsFragment" />
+            android:id="@+id/action_homeNewsFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeListNewsFragment"
-        android:name="com.example.newsinformed.HomeListNewsFragment"
-        android:label="fragment_home_list_news"
-        tools:layout="@layout/fragment_home_list_news" />
-
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.newsinformed.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeNewsFragment"
+            app:destination="@id/homeNewsFragment" />
+    </fragment>
 </navigation>
