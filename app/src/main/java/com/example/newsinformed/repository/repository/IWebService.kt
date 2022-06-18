@@ -1,12 +1,11 @@
-package com.example.newsinformed.model.repository
+package com.example.newsinformed.repository.repository
 
-import com.example.newsinformed.model.Constants
-import com.example.newsinformed.model.ModelNews
+import com.example.newsinformed.repository.utils.Constants
+import com.example.newsinformed.repository.models.ModelNews
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface IWebService {

@@ -1,4 +1,4 @@
-package com.example.newsinformed.model
+package com.example.newsinformed.repository.utils
 
 class Constants {
 
