@@ -1,4 +1,5 @@
 package com.example.newsinformed.model
 
-class ModelNews {
-}
+data class ModelNews(
+    val articles: List<ModelListResult>
+)
