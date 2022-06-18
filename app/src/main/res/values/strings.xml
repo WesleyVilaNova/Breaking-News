@@ -2,4 +2,8 @@
     <string name="app_name">Breaking News</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_search_init">Tecnologia</string>
+    <string name="trending">Trending</string>
+    <string name="home">Home</string>
+    <string name="mensage_error_edit_text">O campo está vazio</string>
 </resources>

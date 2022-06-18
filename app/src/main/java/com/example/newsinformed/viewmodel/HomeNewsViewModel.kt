@@ -1,12 +1,11 @@
-package com.example.newsinformed.view.viewmodel
+package com.example.newsinformed.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.newsinformed.model.ModelNews
-import com.example.newsinformed.model.repository.NewsRepository
+import com.example.newsinformed.repository.models.ModelNews
+import com.example.newsinformed.repository.repository.NewsRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

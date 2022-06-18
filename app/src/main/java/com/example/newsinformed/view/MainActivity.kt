@@ -7,9 +7,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsinformed.R
 import com.example.newsinformed.databinding.ActivityMainBinding
-import com.example.newsinformed.model.repository.IWebService
-import com.example.newsinformed.model.repository.NewsRepository
-import com.example.newsinformed.view.viewmodel.HomeNewsViewModel
+import com.example.newsinformed.repository.repository.IWebService
+import com.example.newsinformed.repository.repository.NewsRepository
+import com.example.newsinformed.viewmodel.HomeNewsViewModel
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,15 +24,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupObservers()
+        setupObserversFragments()
         setupContainerFragments()
     }
 
-    private fun setupObservers() {
+    private fun setupObserversFragments() {
         viewModel.newsResult.observe(this) {
         }
         viewModel.errorMsg.observe(this) {
-
         }
     }
 

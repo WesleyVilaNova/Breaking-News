@@ -4,14 +4,14 @@
     <item
         android:id="@+id/homeNewsFragment"
         android:icon="@drawable/ic_home"
-        android:title="Home">
+        android:title="@string/home">
 
     </item>
 
     <item
         android:id="@+id/favoriteFragment"
-        android:icon="@drawable/ic_favorite"
-        android:title="Favorite">
+        android:icon="@drawable/ic_trending_up"
+        android:title="@string/trending">
 
     </item>
 
