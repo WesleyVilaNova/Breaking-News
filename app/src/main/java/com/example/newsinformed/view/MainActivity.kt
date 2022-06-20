@@ -7,8 +7,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsinformed.R
 import com.example.newsinformed.databinding.ActivityMainBinding
-import com.example.newsinformed.repository.repository.IWebService
-import com.example.newsinformed.repository.repository.NewsRepository
+import com.example.newsinformed.repository.api.IWebService
+import com.example.newsinformed.repository.api.NewsRepository
 import com.example.newsinformed.viewmodel.HomeNewsViewModel
 
 class MainActivity : AppCompatActivity() {
