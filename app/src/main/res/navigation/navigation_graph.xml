@@ -12,16 +12,27 @@
         android:label="HomeNewsFragment"
         tools:layout="@layout/fragment_home_list_news">
         <action
+            android:id="@+id/action_homeNewsFragment_to_detailsNewsFragment"
+            app:destination="@id/detailsNewsFragment" />
+        <action
             android:id="@+id/action_homeNewsFragment_to_favoriteFragment"
             app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.example.newsinformed.view.fragments.FavoriteFragment"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" >
+        android:id="@+id/detailsNewsFragment"
+        android:name="com.example.newsinformed.view.fragments.DetailsNewsFragment"
+        android:label="DetailsNewsFragment"
+        tools:layout="@layout/fragment_details_news">
+        <argument
+            android:name="recebendoDadosDoHome"
+            app:argType="com.example.newsinformed.repository.models.ModelListResult" />
         <action
-            android:id="@+id/action_favoriteFragment_to_homeNewsFragment"
+            android:id="@+id/action_detailsNewsFragment_to_homeNewsFragment2"
             app:destination="@id/homeNewsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.newsinformed.view.fragments.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_trending" />
 </navigation>

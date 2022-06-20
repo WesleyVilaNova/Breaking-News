@@ -9,12 +9,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsinformed.R
 import com.example.newsinformed.databinding.ItemListNewsBinding
+import com.example.newsinformed.repository.interfaces.OnClick
 import com.example.newsinformed.repository.models.ModelListResult
 
-class AdapterListNews(val context: Context) :
-    ListAdapter<ModelListResult, AdapterListNews.MyViewHolder>(DiffCallback()) {
+class AdapterListNews(val context: Context, val _onClick: OnClick) :
+    ListAdapter<ModelListResult, AdapterListNews.MyViewHolder>(DiffCallback()), OnClick {
 
     class MyViewHolder(val binding: ItemListNewsBinding) : RecyclerView.ViewHolder(binding.root)
+
+    override fun onClickNews(onClick: ModelListResult) {
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(ItemListNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false))
@@ -22,6 +26,9 @@ class AdapterListNews(val context: Context) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val itemNews = getItem(position)
+        val format = itemNews.publishedAt.replaceRange(10, 20, "")
+
+        holder.itemView.setOnClickListener { _onClick.onClickNews(itemNews) }
 
         Glide.with(context)
             .load(itemNews.urlToImage)
@@ -34,7 +41,7 @@ class AdapterListNews(val context: Context) :
                 holder.binding.textTitle.text = itemNews.title
                 holder.binding.textViewContent.text = itemNews.content
                 holder.binding.textViewName.text = itemNews.source.name
-                holder.binding.textViewPublishedAt.text = itemNews.publishedAt
+                holder.binding.textViewPublishedAt.text = format
             }
         } catch (e: Exception) {
             e.fillInStackTrace()

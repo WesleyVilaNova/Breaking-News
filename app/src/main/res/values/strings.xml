@@ -1,9 +1,27 @@
 <resources>
     <string name="app_name">Breaking News</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_search_init">Tecnologia</string>
     <string name="trending">Trending</string>
     <string name="home">Home</string>
     <string name="mensage_error_edit_text">O campo está vazio</string>
+    <string name="button_know_more">Saiba mais</string>
+    <string name="title_activity_main_activitytestes_navigation">MainActivitytestesNavigation
+    </string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text_tools">Description</string>
+    <string name="text_description">Descrição</string>
+    <string name="content_imagem_da_reportagem">Imagem da reportagem</string>
+    <string name="content_titulo_da_reportagem">Título da Reportagem</string>
+    <string name="content_descricao_breve_da_reportagem">Descrição breve da reportagem</string>
+    <string name="content_site_que_vinculou_a_mat_ria">Site que vinculou a matéria</string>
+    <string name="content_informar_a_data_da_reportagem">Informar a data da reportagem</string>
+    <string name="content_science">science</string>
+    <string name="content_sport">sport</string>
+    <string name="content_tecnology">tecnology</string>
+    <string name="content_business">business</string>
+    <string name="content_default">default</string>
+    <string name="content_news">news</string>
+    <string name="content_health">health</string>
 </resources>
